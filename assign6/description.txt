@@ -1,0 +1,8 @@
+description
+
+ This program is for the circular linked list.
+ To make the program work, we make three class, that is Node, Iterator, Buffer.
+ Node class represent the node that contains string and two pointer, that each pointer point the next and previous node. It has three private variable, which is word that contains string, next that point next node, and prev that point previous node. In the Node class, there are constructor to set the values, two copy constructor with 1, 2 arguments, and get functions that return the value, set functions that set the value.
+ Iterator class is for the pointer to point a node. There is a private variable curr that point a node. In the Iterator class, there are functions for the mathematical operator between Iterators or a Iterator. Of course, there are get function that return curr.
+ Buffer class is for the using circular linked list. There are two variable from the skeleton, and one variable from me. Count is for the counting number of nodes of Buffer instance, head is first pointer and tail is last pointer. There are three functions which are produce and consume. Then there are get functions that are returns the private variables, and Iterator instance that point nodes in Buffer class.
+
