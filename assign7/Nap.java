@@ -4,8 +4,7 @@ import java.io.*;
 // counts the longest time for nap using his scheduler.
 public class Nap {
 	public static void main(String[] args) throws IOException {
-		FileReader testFile = new FileReader("test.txt");
-		BufferedReader bufIn = new BufferedReader(testFile);
+		BufferedReader bufIn = new BufferedReader(new InputStreamReader(System.in));
 
 		String str;
 		int dayCount=0;
@@ -36,6 +35,7 @@ public class Nap {
 					// end_time : make the time unit minutes
 					start_time = (Integer.parseInt(start[0])-10)*60+Integer.parseInt(start[1]);
 					diff = start_time-end_time;
+
 					if(for_time<diff) {for_time=diff; at_time=(String.valueOf(10+(end_time/60))+":"+String.format("%02d",end_time%60));}
 					end_time = (Integer.parseInt(end[0])-10)*60+Integer.parseInt(end[1]);
 
